@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.container{
+  background-image: url(./img/homepic.webp);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.menu-bar{
+    background: rgb(30, 1, 1);
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+    background: #20a2e3;
+    border-radius: 3px;
+}
+.menu-bar .fa{
+    margin-right: 8px;
+}
+.sub-menu{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: #20a2e3;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu ul li:last-child{
+    border-bottom: none;
+
+}
+.menu-bar ul li:hover .sub-menu ul li a:hover{
+    color: #000dff;
+}
+.ss{
+    width: 5%;
+    margin-right: 20%;
+    margin-left: -20%;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    font-family: cursive;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #0f12db;
+}
+.content p{
+    font-size: 20px;
+    color: #c3c6d9;
+}
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.content .hg{
+    display: inline-block;
+    background: linear-gradient(45deg, #1c11f1, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
+.bar{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.rw{
+    font-size: 60px;
+    color: #06135c;
+    font-family: 'Courier New';
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.bar-col{
+    flex-basis: 28%;
+    background: #3e1533;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.bar-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.picpro{
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+    border-radius: 20px;
+    
+}
+#catogo{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    background: rgba(red, green, blue, alpha);
+
+}
+
+#catogo .photoset{
+    width: 190px;
+    padding: 10px 10px;
+    box-shadow: 20px 20px 20px rgb(230, 230, 230);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+#catogo.photoset:hover{
+    box-shadow: 10px 10px 54px rgba(red, green, blue, alpha);
+}
+
+#catogo .photoset img{
+    width: 100%;
+}
+.footer{
+    margin-top: 100px;
+    width: 100%;
+    padding: 100px 10%;
+    background-color: #333;
+    color: #9b8ae0;
+    display: flex;
+} 
+.footer div{
+    text-align: center;
+} 
+.col-1{
+    flex-grow: 2;
+}
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.hm{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    color:var(--black);
+    padding:.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+body{
+   background-color:gray;
+}
